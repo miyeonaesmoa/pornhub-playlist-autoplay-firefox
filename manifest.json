@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Pornhub Playlist Autoplay",
+  "version": "1.0",
+  "description": "Allow to play the next playlist video once the current video ends.",
+  "homepage_url": "https://github.com/ofzirconium/pornhub-playlist-autoplay-firefox",
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pornhub.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
+
